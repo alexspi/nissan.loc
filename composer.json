@@ -1,0 +1,100 @@
+{
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": [
+    "framework",
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "alexusmai/yandex-metrika": "^0.6.0",
+    "anlutro/curl": "^1.4",
+    "arrilot/laravel-widgets": "^3.7",
+    "backpack/base": "^0.8.0",
+    "backpack/crud": "^3.3.0",
+    "backpack/backupmanager": "^1.1",
+    "backpack/logmanager": "^2.3",
+    "backpack/settings": "^2.0",
+    "backpack/pagemanager": "^1.1",
+    "backpack/MenuCRUD": "^1.0",
+    "backpack/newscrud": "^2.1",
+    "backpack/permissionmanager": "^2.1",
+    "barryvdh/laravel-debugbar": "^2.3",
+    "barryvdh/laravel-ide-helper": "^2.2",
+    "baum/baum": "^1.1",
+    "consoletvs/charts": "^5.0",
+    "davejamesmiller/laravel-breadcrumbs": "^4.2",
+    "gloudemans/shoppingcart": "^2.4",
+    "google/recaptcha": "^1.1",
+    "guzzlehttp/guzzle": "^6.2",
+    "kalnoy/nestedset": "^4.3",
+    "kodicms/laravel-assets": "^0.3.5",
+    "laravel-notification-channels/onesignal": "^1.0",
+    "laravel/framework": "5.5.*",
+    "laravel/socialite": "^3.0",
+    "laravel/tinker": "~1.0",
+    "laravelcollective/html": "^5.4",
+    "laravelrus/localized-carbon": "master",
+    "league/csv": "^8.2",
+    "maatwebsite/excel": "^2.1",
+    "nesbot/carbon": "^1.22",
+    "predis/predis": "^1.1",
+    "pusher/pusher-php-server": "^2.6",
+    "socialiteproviders/vkontakte": "^3.0",
+    "yajra/laravel-datatables-buttons": "3.*",
+    "yajra/laravel-datatables-html": "3.*",
+    "yajra/laravel-datatables-oracle": "8.*"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~6.0",
+    "filp/whoops": "~2.0",
+    "symfony/css-selector": "2.8.*|3.0.*",
+    "symfony/dom-crawler": "2.8.*|3.0.*",
+    "laracasts/generators": "dev-master",
+    "backpack/generators": "^1.1"
+  },
+  "autoload": {
+    "classmap": [
+      "database"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "post-install-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postInstall",
+      "@php artisan optimize"
+    ],
+    "post-update-cmd": [
+      "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+      "@php artisan optimize"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

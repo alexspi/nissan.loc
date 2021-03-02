@@ -1,0 +1,619 @@
+/** {
+	outline: 1px solid gold;
+}*/
+
+/*5 колонок*/
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-2-5,
+.col-sm-2-5,
+.col-md-2-5,
+.col-lg-2-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  width: 20%;
+  float: left;
+}
+
+.col-xs-2-5 {
+  width: 40%;
+  float: left;
+}
+ 
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+  .col-sm-2-5 {
+    width: 40%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+  .col-md-2-5 {
+    width: 40%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+  .col-lg-2-5 {
+    width: 40%;
+    float: left;
+  }
+}
+
+
+html {
+	position: relative;
+    min-height: 100%;
+}
+body {
+	background: #fff;
+	font-family: "MuseoSansRegular";
+	font-size: 16px;
+	margin-bottom: 100px;
+}
+.container {
+	background: #fff;
+}
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+ul, ol {
+	padding: 0;
+}
+ul li, ol li {
+	list-style: none !important;
+}
+a:hover {
+	text-decoration: none;
+}
+h3 {
+	font-size: 35px;
+	font-family: "MuseoSansBlack";
+}
+#login-bar {
+	background: #0f5f8f;
+	height: 40px;
+	position: relative;
+}
+#login-bar .btn-default {
+	background: transparent;
+	color: #fff;
+    line-height: 32px;
+    height: 40px;
+}
+#login-bar .open>.dropdown-menu {
+	width: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+	background: #2587bd;
+	padding: 0;
+	left: 0 !important
+}
+#login-bar .open>.dropdown-menu a {
+	color: #fff;
+	padding: 8px;
+}
+#login-bar .open>.dropdown-menu a:hover {
+	background: #e62e04;
+}
+#login-bar .open>.dropdown-toggle.btn-default,
+#login-bar .btn-default:hover {
+	border-radius: 0 !important;
+	background: #2587bd;
+}
+#login-bar > li {
+	list-style: none;
+	display: block;
+	position: absolute;
+	right: 15px;
+}
+#login-bar > li .dropdown {
+	margin-top: 0px !important;
+    height: 40px;
+}
+.login-bar-text {
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	font-size: 14px;
+	color: #fff;
+}
+.breadcrumb {
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+#navbar {
+	padding: 0;
+}
+.first-child a {
+	padding-left: 0 !important;
+}
+.navbar-default {
+	background: #0c5a89;
+	border: none;
+	border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background: #2587bd;
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.dropdown {
+	margin-top: 9px;
+}
+#log-reg {
+	border: 0;
+}
+#log-reg .caret {
+	margin-left: 10px;
+}
+#promo-area {
+	position: relative;
+	height: 500px;
+	margin-bottom: 25px;
+}
+#promo-cars {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+#main-page-title {
+	display: block;
+	font-family: "MuseoSansBlack";
+	margin-bottom: 0;
+	font-size: 45px;
+	position: relative;
+	z-index: 10;
+}
+#main-descriptor {
+	font-family: "MuseoSansMedium";
+	margin-top: 10px;
+	font-size: 27px;
+	line-height: 33px;
+	margin-bottom: 35px;
+	position: relative;
+	z-index: 10;
+}
+
+#ctlg-btns {
+	width: 260px !important;
+	position: relative;
+	z-index: 10;
+}
+#ctlg-btns span {
+	font-size: 22px;
+}
+#ctlg-btns .dropdown-menu {
+	width: 100%;
+}
+#ctlg-btns .open>.dropdown-menu {
+	width: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+	background: #2587bd;
+	padding: 0;
+}
+#ctlg-btns .open>.dropdown-menu a {
+	color: #fff;
+	padding: 8px;
+}
+#ctlg-btns .open>.dropdown-menu a:hover {
+	background: #e62e04;
+}
+#ctlg-btns .open>.dropdown-toggle.btn-default,
+#ctlg-btns .btn-default:hover {
+	border-radius: 0 !important;
+	background: #2587bd;
+}
+#infiniti-btn,
+#nissan-btn {
+	margin-top: 15px;
+}
+#infiniti-btn button,
+#nissan-btn button {
+	width: 260px !important;
+	position: relative;
+	line-height: 30px;
+	background: #0f5f8f;
+	color: #fff;
+	border-radius: 0;
+}
+#infiniti-btn button .caret,
+#nissan-btn button .caret {
+	margin-left: 10px;
+}
+.btn-brand {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.btn-brand img {
+	max-width: 100%;
+}
+.nav-tabs.nav-justified>li>a {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.nav-tabs.nav-justified>li>a:hover {
+	border: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
+	border-bottom: 1px solid transparent;
+}/*
+.nav-tabs.nav-justified>.active>a, 
+.nav-tabs.nav-justified>.active>a:focus, 
+.nav-tabs.nav-justified>.active>a:hover {
+	border: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
+	border-bottom: 1px solid transparent;
+	font-family: "MuseoSansBold";
+}*/
+#qsearch {
+	margin-bottom: 45px;
+}
+.tab-content {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-top: 0;
+	padding: 25px 15px;
+	background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f7f9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f7f9 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f2f7f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f7f9',GradientType=0 );
+}
+.tab-content .btn {
+	background: #2587bd;
+	color: #fff;
+}
+
+
+#about {
+	padding: 20px 0;
+	margin-bottom: 35px;
+	background: #e9eef0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e9eef0 0%, #d2dadf 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e9eef0 0%,#d2dadf 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e9eef0 0%,#d2dadf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef0', endColorstr='#d2dadf',GradientType=0 ); /* IE6-9 */
+}
+#about-text h3 {
+	font-size: 35px;
+	font-family: "MuseoSansBlack";
+	margin-top: 45px;
+}
+#about-text strong {
+	font-family: "MuseoSansBold";
+	font-size: 16px;
+	display: block;
+	text-align: center;
+}
+#about-text img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	height: 55px;
+}
+.about-headline {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+.about-headline p {
+	font-size: 22px;
+	font-family: "MuseoSansBlack";
+	color: #0c5a89;
+}
+#about-img-text-video img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+#about-img-text-video blockquote {
+	margin-top: 45px;
+}
+#about-img-text-video blockquote p {
+	font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+	.tab-content {
+		border: 0;
+		padding: 0;
+	}
+}
+.top-form-title {
+	display: block;
+	margin-bottom: 25px;
+	border-bottom: 0;
+}
+.section-title {
+	display: block;
+	margin-bottom: 20px;
+}
+.news-section h3 {
+	margin-bottom: 45px;
+}
+#news {
+	margin-top: 25px;
+}
+.news-block {
+	margin-bottom: 15px;
+}
+.news-bottom a {
+	display: block;
+	float: left;
+}
+.news-bottom i {
+	font-size: 12px;
+	display: block;
+	float: right;
+}
+.inner {
+	background: #f2f7f9;
+	border-left: 6px solid #2587bd;
+	padding: 10px;
+	border-radius: 0;
+}
+.inner h3 {
+	margin-top: 0;
+	font-size: 18px !important;
+}
+#map,
+#map2 {
+	height: 450px;
+}
+.inner-main-title {
+	margin-top: 35px;
+	display: block;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #eee;
+}
+.inner-col-title {
+	font-size: 25px;
+	border-bottom: 2px solid #eee;
+	display: block;
+	height: 48px;
+	margin-bottom: 15px;
+}
+h3.inner-col-title {
+	font-size: 20px;
+	line-height: 2.4;
+}
+
+
+#top-top {
+	padding: 15px 0;
+}
+#shop-1,
+#shop-2,
+#top-worktime {
+	margin-top: 10px;
+	font-family: "MuseoSansMedium";
+}
+#top-contacts {
+	text-align: right;
+	font-family: "MuseoSansBold";
+}
+#top-contacts strong {
+	display: block;
+	font-weight: normal;
+	font-size: 19px;
+}
+#shop-1 i,
+#shop-2 i,
+#top-worktime i {
+	font-size: 40px;
+	float: left;
+	padding-right: 10px;
+	color: #e62e04;
+}
+
+
+
+/*Каталоги*/
+.brands-area a,
+.countries-market a,
+.popular-models {
+	display: block;
+	font-size: 16px;
+	margin-top: 15px;
+}
+.countries-market a {
+	margin-bottom: 25px;
+}
+.brands-area img,
+.countries-market img {
+	width: 100px;
+	padding-right: 15px;
+}
+.brands-area a span,
+.countries-market a span,
+.popular-models a span {
+	color: #008ACE;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #b2ccf0;
+}
+.brands-area a:hover span,
+.countries-market a:hover span,
+.popular-models a:hover span {
+	color: #CC0000;
+	border-color: #f0b2b2 !important;
+}
+.page-description,
+.countries-market {
+	margin: 45px 0;
+}
+
+
+#shop_map h3 {
+	margin-bottom: 40px;
+}
+h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/*Подвал*/
+footer {
+	font-size: 13px !important;
+	margin-top: 40px;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+footer .container {
+	padding: 15px 0;
+	background: #0f5f8f;
+	color: #fff;
+}
+footer i {
+	font-style: normal;
+}
+.rekv {
+	text-align: center;
+}
+.informer {
+	text-align: right;
+}
+
+
+.jopa img {
+	max-width: 97%;
+}
+.jopa h3 {
+	margin-bottom: 25px;
+}
+
+#trigger {
+	margin: 45px 0 20px 0;
+	width: 100%;
+	overflow: hidden;
+	height: 400px;
+	background: #f2f7f9;
+}
+#trigger h3 {
+	font-family: "MuseoSansBold";
+	color: #0c5a89;
+}
+#trigger p {
+	font-size: 22px;
+	color: #0c5a89;
+}
+.manager {
+	text-align: center;
+	position: relative;
+}
+.manager i {
+	font-size: 13px;
+	position: absolute;
+	text-align: left !important;
+	display: block;
+	top: 85px;
+	right: 15px;
+}
+.submit-message {
+	background: #2587bd;
+	border: none;
+	color: #fff;
+	border-radius: 4px;
+	padding: 8px 15px;
+	width: 150px;
+	font-size: 18px;
+}
+
+.article-head {
+	font-family: "MuseoSansBold";
+}
+.post-date i {
+	display: block;
+	text-align: right;
+	font-size: 12px;
+	color: #999;
+	font-style: normal;
+}
+
+#my-order {
+	padding-left: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#my-profile {
+	padding-right: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 25px 15px;
+	background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f7f9 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f7f9 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f2f7f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f7f9',GradientType=0 );
+}
+#my-order strong,
+#my-profile strong {
+	font-family: "MuseoSansBold";
+	font-size: 20px;
+}
+#my-order strong {
+	border-bottom: 1px solid #ccc;
+	display: block;
+}
+#my-profile strong {
+	display: block;
+	padding-bottom: 15px;
+}
+#my-profile ul li {
+	padding: 5px 0;
+}
+#my-profile ul li i {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: "MuseoSansBold";
+	font-style: normal;
+	letter-spacing: 0.09em;
+	border-bottom: 1px solid #ccc;
+}
+#my-profile ul li p {
+	padding-top: 8px;
+}
